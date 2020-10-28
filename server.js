@@ -4,6 +4,8 @@ const mongoose = require('mongoose');
 const Note = require('./models/Note');
 
 //Database Connection
+//bobotanga
+
 connectDB = async () => {
   const conn = await mongoose.connect(
     'mongodb+srv://lendlc:L3ndlc12@cluster0.9fygk.mongodb.net/note',
