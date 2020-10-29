@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const Note = require('./models/Note');
+const cors = require('cors')
 
 //Database Connection
 connectDB = async () => {
@@ -23,6 +24,7 @@ connectDB();
 
 //allow the use of JSON Data format
 app.use(express.json());
+app.use(cors())
 
 // @desc        get all notes
 // @router      GET http://localhost:3500/v1/notes/
