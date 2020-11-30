@@ -5,7 +5,6 @@ const Note = require('./models/Note');
 const cors = require('cors')
 
 //Database Connection
-//bobotanga
 
 connectDB = async () => {
   const conn = await mongoose.connect(
